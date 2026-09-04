@@ -10,9 +10,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 
   <style>
-  /* ══════════════════════════════════════════
-     TOKENS — LIGHT (default)
-  ══════════════════════════════════════════ */
+  /* ââââââââââââââââââââââââââââââââââââââââââ
+     TOKENS â LIGHT (default)
+  ââââââââââââââââââââââââââââââââââââââââââ */
   :root {
     --brand:      #5B1D00;
     --brand-mid:  #8C3400;
@@ -43,7 +43,7 @@
     --shadow:     0 1px 4px rgba(26,8,0,.08);
   }
 
-  /* ── DARK (system) ── */
+  /* ââ DARK (system) ââ */
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg:       #130B04;
@@ -59,7 +59,7 @@
       --amber-bg: #3D2A0A;
     }
   }
-  /* ── DARK (explicit) ── */
+  /* ââ DARK (explicit) ââ */
   :root[data-theme="dark"] {
     --bg:       #130B04;
     --surf:     #1F1009;
@@ -74,9 +74,9 @@
     --amber-bg: #3D2A0A;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      RESET & BASE
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   html { font-size: 14px; }
   body {
@@ -89,9 +89,9 @@
     line-height: 1.5;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      SIDEBAR
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .sidebar {
     width: var(--sidebar-w);
     background: var(--brand);
@@ -179,9 +179,9 @@
   }
   .nav-item .icon { font-size: 15px; width: 18px; text-align: center; }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      MAIN
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .main {
     margin-left: var(--sidebar-w);
     flex: 1;
@@ -231,16 +231,16 @@
     text-transform: uppercase;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      CONTENT
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .content { padding: 24px 28px; }
   .section { display: none; }
   .section.active { display: block; }
 
-  /* ══════════════════════════════════════════
-     KPI STRIP — dark bar, large condensed numerals
-  ══════════════════════════════════════════ */
+  /* ââââââââââââââââââââââââââââââââââââââââââ
+     KPI STRIP â dark bar, large condensed numerals
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .kpi-strip {
     background: var(--brand);
     border-radius: var(--r);
@@ -279,9 +279,9 @@
     font-weight: 500;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      CARDS
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .card {
     background: var(--surf);
     border: 1px solid var(--border);
@@ -306,9 +306,9 @@
   .chart-wrap { position: relative; height: 230px; }
   .chart-wrap.sm { height: 170px; }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      TABLES
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .tbl-header {
     display: flex;
     justify-content: space-between;
@@ -355,9 +355,9 @@
     font-size: 12px;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      BADGES
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .badge {
     display: inline-block;
     padding: 2px 8px;
@@ -374,9 +374,9 @@
   .b-pend { background: var(--amber-bg); color: var(--amber); }
   .b-crit { background: var(--red-bg);   color: var(--red); }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      FORMS
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .form-wrap { max-width: 920px; }
   .form-head {
     border-bottom: 1px solid var(--border);
@@ -484,9 +484,9 @@
   .del-btn { background: none; border: none; color: var(--red); cursor: pointer; font-size: 13px; padding: 3px 7px; border-radius: 3px; }
   .del-btn:hover { background: var(--red-bg); }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      BUTTONS
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .btn {
     padding: 9px 20px;
     border: none;
@@ -515,9 +515,9 @@
     margin-top: 20px;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      SEARCH BAR
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .search-bar {
     display: flex;
     gap: 10px;
@@ -528,9 +528,9 @@
   .search-bar input  { flex: 1; min-width: 160px; }
   .search-bar select { min-width: 150px; }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      ALERTS
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .alert {
     padding: 10px 14px;
     border-radius: var(--r);
@@ -543,9 +543,9 @@
   .a-err  { background: var(--red-bg);   color: var(--red);    border-color: var(--red); }
   .a-warn { background: var(--amber-bg); color: var(--amber);  border-color: var(--accent); }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      MODAL
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .modal-bg {
     display: none; position: fixed; inset: 0;
     background: rgba(0,0,0,.6);
@@ -573,7 +573,7 @@
   .modal .fg { margin-bottom: 12px; }
   .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
 
-  /* ── PIN MODAL ── */
+  /* ââ PIN MODAL ââ */
   .pin-lock-icon { font-size: 40px; text-align: center; margin-bottom: 8px; }
   .pin-inputs {
     display: flex; gap: 10px; justify-content: center;
@@ -605,9 +605,9 @@
     padding: 4px 8px; margin-top: 4px; word-break: break-all;
   }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      PAGINATION
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   .pagination {
     display: flex; justify-content: center;
     gap: 4px; margin-top: 14px; flex-wrap: wrap;
@@ -629,9 +629,9 @@
   .pg.active { background: var(--brand); color: #fff; border-color: var(--brand); }
   .pg-lbl { text-align: center; font-size: 11px; color: var(--text-lo); margin-top: 6px; }
 
-  /* ══════════════════════════════════════════
+  /* ââââââââââââââââââââââââââââââââââââââââââ
      RESPONSIVE
-  ══════════════════════════════════════════ */
+  ââââââââââââââââââââââââââââââââââââââââââ */
   @media (max-width: 1100px) {
     .kpi-strip { grid-template-columns: repeat(2,1fr); }
     .charts-row { grid-template-columns: 1fr; }
@@ -645,7 +645,7 @@
     :root { --sidebar-w: 0px; }
   }
 
-  /* ── CATÁLOGOS ── */
+  /* ââ CATÃLOGOS ââ */
   .cat-tabs {
     display: flex;
     gap: 2px;
@@ -697,17 +697,17 @@
 </head>
 <body>
 
-<!-- ════════ MODAL PIN ════════ -->
+<!-- ââââââââ MODAL PIN ââââââââ -->
 <div class="modal-bg" id="pinModal">
   <div class="modal" style="max-width:340px">
 
     <!-- Estado: CREAR PIN (primera vez) -->
     <div id="pinCreate">
-      <div class="pin-lock-icon">🔒</div>
+      <div class="pin-lock-icon">ð</div>
       <div class="modal-title" style="text-align:center">Crear PIN de seguridad</div>
       <div class="modal-desc" style="text-align:center">
-        Define un PIN de 4 dígitos para proteger la configuración.<br>
-        Nadie podrá ver ni cambiar la URL del sistema sin este PIN.
+        Define un PIN de 4 dÃ­gitos para proteger la configuraciÃ³n.<br>
+        Nadie podrÃ¡ ver ni cambiar la URL del sistema sin este PIN.
       </div>
       <div class="pin-inputs" id="pinCreateInputs">
         <input type="password" inputmode="numeric" maxlength="1" id="pc0" oninput="pinMove(this,0,'create')">
@@ -731,9 +731,9 @@
 
     <!-- Estado: VERIFICAR PIN -->
     <div id="pinVerify" style="display:none">
-      <div class="pin-lock-icon">🔐</div>
-      <div class="modal-title" style="text-align:center">Configuración protegida</div>
-      <div class="modal-desc" style="text-align:center">Ingresa tu PIN de 4 dígitos para continuar.</div>
+      <div class="pin-lock-icon">ð</div>
+      <div class="modal-title" style="text-align:center">ConfiguraciÃ³n protegida</div>
+      <div class="modal-desc" style="text-align:center">Ingresa tu PIN de 4 dÃ­gitos para continuar.</div>
       <div class="pin-inputs">
         <input type="password" inputmode="numeric" maxlength="1" id="pv0" oninput="pinMove(this,0,'verify')">
         <input type="password" inputmode="numeric" maxlength="1" id="pv1" oninput="pinMove(this,1,'verify')">
@@ -750,36 +750,12 @@
   </div>
 </div>
 
-<!-- ════════ MODAL CONFIGURACIÓN ════════ -->
-<div class="modal-bg" id="cfgModal">
-  <div class="modal">
-    <div class="modal-title">⚙ Configuración</div>
-    <div class="modal-desc">
-      Conexión con Google Sheets a través del Apps Script Web App.
-      <span style="color:var(--green);font-size:11px;font-weight:600"> 🔒 Protegida por PIN</span>
-    </div>
-    <div class="fg"><label>URL del Apps Script (Web App)</label>
-      <input type="password" id="cfg-url" placeholder="https://script.google.com/macros/s/.../exec" autocomplete="off">
-      <div class="url-masked" id="cfg-url-preview"></div>
-    </div>
-    <div class="fg"><label>Nombre de Usuario</label>
-      <input type="text" id="cfg-user" placeholder="Ej: ADRIAN" autocomplete="off"></div>
-    <div class="fg" style="border-top:1px solid var(--border);padding-top:14px;margin-top:6px">
-      <label style="color:var(--text-lo)">Cambiar PIN de seguridad</label>
-      <button class="btn btn-sec btn-sm" style="margin-top:6px" onclick="pinChangeOpen()">🔑 Cambiar PIN</button>
-    </div>
-    <div class="modal-actions">
-      <button class="btn btn-sec" onclick="closeConfig()">Cancelar</button>
-      <button class="btn btn-prim" onclick="saveConfig()">Guardar</button>
-    </div>
-  </div>
-</div>
-
-<!-- ════════ SIDEBAR ════════ -->
+<!-- ââââââââ MODAL CONFIGURACIÃN ââââââââ -->
+<!-- ââââââââ SIDEBAR ââââââââ -->
 <nav class="sidebar">
   <div class="sb-brand">
     <div class="sb-emblem">
-      <div class="sb-icon">🔧</div>
+      <div class="sb-icon">ð§</div>
       <div>
         <div class="sb-company">Transportes<br>SSI S.A.C.</div>
       </div>
@@ -787,84 +763,83 @@
     <div class="sb-system-label">Control de Mantenimiento</div>
   </div>
 
-  <div id="cfgBar" class="cfg-strip" onclick="openConfig()">⚠ Configurar Apps Script</div>
 
   <nav style="flex:1;padding:8px 0 20px">
     <div class="nav-section">Principal</div>
     <div class="nav-item active" onclick="nav(this,'dashboard')">
-      <span class="icon">▤</span> Dashboard
+      <span class="icon">â¤</span> Dashboard
     </div>
 
     <div class="nav-section">Registrar</div>
     <div class="nav-item" onclick="nav(this,'reg-fallas')">
-      <span class="icon">⊞</span> Reporte de Fallas
+      <span class="icon">â</span> Reporte de Fallas
     </div>
     <div class="nav-item" onclick="nav(this,'reg-mant')">
-      <span class="icon">⛭</span> Mantenimiento
+      <span class="icon">â­</span> Mantenimiento
     </div>
 
     <div class="nav-section">Control</div>
     <div class="nav-item" onclick="nav(this,'ctrl-fallas')">
-      <span class="icon">≡</span> Control de Fallas
+      <span class="icon">â¡</span> Control de Fallas
     </div>
     <div class="nav-item" onclick="nav(this,'ctrl-mant')">
-      <span class="icon">≡</span> Control de Mantenimientos
+      <span class="icon">â¡</span> Control de Mantenimientos
     </div>
 
     <div class="nav-section">Administrar</div>
     <div class="nav-item" onclick="nav(this,'catalogos')">
-      <span class="icon">☰</span> Catálogos
+      <span class="icon">â°</span> CatÃ¡logos
     </div>
 
     <div class="nav-section">Sistema</div>
     <div class="nav-item" onclick="openConfig()">
-      <span class="icon">⚙</span> Configuración
+      <span class="icon">â</span> ConfiguraciÃ³n
     </div>
   </nav>
 </nav>
 
-<!-- ════════ MAIN ════════ -->
+<!-- ââââââââ MAIN ââââââââ -->
 <div class="main">
   <header class="topbar">
     <div class="topbar-title" id="pageTitle">Dashboard</div>
     <div class="topbar-right">
       <span class="topbar-date" id="topDate"></span>
-      <div class="user-pill" id="userPill">—</div>
+      <div class="user-pill" id="userPill">â</div>
     </div>
   </header>
 
   <div class="content">
 
-    <!-- ══ DASHBOARD ══ -->
+    <!-- ââ DASHBOARD ââ -->
     <div id="section-dashboard" class="section active">
       <div id="dashAlert"></div>
 
       <div class="kpi-strip">
         <div class="kpi-cell">
           <div class="kpi-eyebrow">Total Fallas</div>
-          <div class="kpi-num" id="k-fallas">—</div>
-          <div class="kpi-sub">Registros históricos</div>
+          <div class="kpi-num" id="k-fallas">â</div>
+          <div class="kpi-sub">Registros histÃ³ricos</div>
         </div>
         <div class="kpi-cell">
           <div class="kpi-eyebrow">Fallas este Mes</div>
-          <div class="kpi-num" id="k-mes">—</div>
-          <div class="kpi-sub" id="k-mes-lbl">—</div>
+          <div class="kpi-num" id="k-mes">â</div>
+          <div class="kpi-sub" id="k-mes-lbl">â</div>
         </div>
         <div class="kpi-cell">
           <div class="kpi-eyebrow">Total Mantenimientos</div>
-          <div class="kpi-num" id="k-mant">—</div>
-          <div class="kpi-sub">Registros históricos</div>
+          <div class="kpi-num" id="k-mant">â</div>
+          <div class="kpi-sub">Registros histÃ³ricos</div>
         </div>
         <div class="kpi-cell">
           <div class="kpi-eyebrow">Unidad + Reportada</div>
-          <div class="kpi-num small" id="k-placa">—</div>
+          <div class="kpi-num small" id="k-placa">â</div>
           <div class="kpi-sub">Mayor cantidad de fallas</div>
         </div>
       </div>
 
       <div class="charts-row">
         <div class="card">
-          <div class="card-title">Fallas por placa — Top 8</div>
+          <div class="card-title">Fallas por placa â Top 8</div>
           <div class="chart-wrap"><canvas id="chPlacas"></canvas></div>
         </div>
         <div class="card">
@@ -874,19 +849,19 @@
       </div>
 
       <div class="card" style="margin-bottom:16px">
-        <div class="card-title">Tendencia mensual — últimos 12 meses</div>
+        <div class="card-title">Tendencia mensual â Ãºltimos 12 meses</div>
         <div class="chart-wrap sm"><canvas id="chMeses"></canvas></div>
       </div>
 
       <div class="card">
         <div class="tbl-header">
-          <div class="card-title" style="margin:0">Últimas fallas registradas</div>
-          <button class="btn btn-sec btn-sm" onclick="loadDashboard()">↺ Actualizar</button>
+          <div class="card-title" style="margin:0">Ãltimas fallas registradas</div>
+          <button class="btn btn-sec btn-sm" onclick="loadDashboard()">âº Actualizar</button>
         </div>
         <div class="tbl-wrap">
           <table>
             <thead><tr>
-              <th>N° Doc</th><th>Fecha</th><th>Placa</th>
+              <th>NÂ° Doc</th><th>Fecha</th><th>Placa</th>
               <th>Sistema</th><th>Componente</th><th>Personal</th><th>Detalle</th>
             </tr></thead>
             <tbody id="tb-recientes"></tbody>
@@ -895,7 +870,7 @@
       </div>
     </div>
 
-    <!-- ══ REG FALLAS ══ -->
+    <!-- ââ REG FALLAS ââ -->
     <div id="section-reg-fallas" class="section">
       <div id="fallaAlert"></div>
       <div class="card form-wrap">
@@ -906,25 +881,25 @@
         <form id="formFallas" onsubmit="submitFalla(event)">
           <div class="form-row fr3">
             <div class="fg"><label>Fecha</label><input type="date" id="f-fecha" required></div>
-            <div class="fg"><label>N° de Documento</label><input type="text" id="f-ndoc" placeholder="Ej: RF-001"></div>
+            <div class="fg"><label>NÂ° de Documento</label><input type="text" id="f-ndoc" placeholder="Ej: RF-001"></div>
             <div class="fg"><label>Usuario</label><input type="text" id="f-usuario" readonly></div>
           </div>
           <div class="form-row fr2">
             <div class="fg"><label>Placa</label>
-              <select id="f-placa" required><option value="">Seleccionar placa…</option></select></div>
+              <select id="f-placa" required><option value="">Seleccionar placaâ¦</option></select></div>
             <div class="fg"><label>Kilometraje</label>
               <input type="number" id="f-km" placeholder="125 000" min="0"></div>
           </div>
           <div class="form-row">
             <div class="fg"><label>Personal que Reporta</label>
-              <select id="f-personal" required><option value="">Seleccionar personal…</option></select></div>
+              <select id="f-personal" required><option value="">Seleccionar personalâ¦</option></select></div>
           </div>
 
           <div class="subsection-label">Detalle de Fallas</div>
           <div class="ftbl-wrap" style="overflow-x:auto">
             <table style="min-width:700px">
               <thead><tr>
-                <th style="width:8%">Código</th>
+                <th style="width:8%">CÃ³digo</th>
                 <th style="width:26%">Sistema</th>
                 <th style="width:28%">Componente</th>
                 <th>Detalle / Ocurrencia</th>
@@ -943,7 +918,7 @@
       </div>
     </div>
 
-    <!-- ══ REG MANT ══ -->
+    <!-- ââ REG MANT ââ -->
     <div id="section-reg-mant" class="section">
       <div id="mantAlert"></div>
       <div class="card form-wrap" style="max-width:1100px">
@@ -954,41 +929,41 @@
         <form id="formMant" onsubmit="submitMant(event)">
           <!-- Fila 1: encabezado -->
           <div class="form-row fr3">
-            <div class="fg"><label>N° de Documento</label><input type="text" id="m-ndoc" placeholder="Ej: MT-001"></div>
-            <div class="fg"><label>Nombre de Reparación</label><input type="text" id="m-nombre" placeholder="Ej: Cambio de filtro de aceite" required></div>
+            <div class="fg"><label>NÂ° de Documento</label><input type="text" id="m-ndoc" placeholder="Ej: MT-001"></div>
+            <div class="fg"><label>Nombre de ReparaciÃ³n</label><input type="text" id="m-nombre" placeholder="Ej: Cambio de filtro de aceite" required></div>
             <div class="fg"><label>Usuario</label><input type="text" id="m-usuario" readonly></div>
           </div>
-          <!-- Fila 2: fechas / horas / duración -->
+          <!-- Fila 2: fechas / horas / duraciÃ³n -->
           <div class="form-row" style="grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:10px">
             <div class="fg"><label>Fecha Inicial</label><input type="date" id="m-fecha-ini" required onchange="calcDur()"></div>
             <div class="fg"><label>Hora Inicial</label><input type="time" id="m-hora-ini" required onchange="calcDur()"></div>
             <div class="fg"><label>Fecha Final</label><input type="date" id="m-fecha-fin" onchange="calcDur()"></div>
             <div class="fg"><label>Hora Final</label><input type="time" id="m-hora-fin" onchange="calcDur()"></div>
-            <div class="fg"><label>Duración</label><input type="text" id="m-duracion" readonly placeholder="Auto…" style="background:var(--surf-2);color:var(--text-md)"></div>
+            <div class="fg"><label>DuraciÃ³n</label><input type="text" id="m-duracion" readonly placeholder="Autoâ¦" style="background:var(--surf-2);color:var(--text-md)"></div>
           </div>
           <!-- Fila 3: tipo / placa / km / lugar -->
           <div class="form-row fr4">
             <div class="fg"><label>Tipo Mantenimiento</label>
               <select id="m-tipo" required>
-                <option value="">Seleccionar…</option>
+                <option value="">Seleccionarâ¦</option>
                 <option>CORRECTIVO</option><option>PREVENTIVO</option><option>PREDICTIVO</option>
               </select></div>
             <div class="fg"><label>Placa</label>
-              <select id="m-placa" required><option value="">Seleccionar placa…</option></select></div>
+              <select id="m-placa" required><option value="">Seleccionar placaâ¦</option></select></div>
             <div class="fg"><label>Kilometraje</label>
               <input type="number" id="m-km" placeholder="125 000" min="0"></div>
             <div class="fg"><label>Lugar / Taller</label>
               <select id="m-lugar">
-                <option value="">Seleccionar…</option>
+                <option value="">Seleccionarâ¦</option>
                 <option>SSI</option><option>TALLER EXTERNO</option>
                 <option>TRIPLE E TRUCKS</option><option>TIMO</option>
                 <option>J &amp; T TRANSPORTE DE CARGA</option><option>RECTIFICACIONES EMANUEL SG</option>
               </select></div>
           </div>
-          <!-- Fila 4: técnico -->
+          <!-- Fila 4: tÃ©cnico -->
           <div class="form-row fr2">
-            <div class="fg"><label>Técnico Responsable</label>
-              <select id="m-tecnico"><option value="">Seleccionar técnico…</option></select></div>
+            <div class="fg"><label>TÃ©cnico Responsable</label>
+              <select id="m-tecnico"><option value="">Seleccionar tÃ©cnicoâ¦</option></select></div>
             <div></div>
           </div>
 
@@ -998,7 +973,7 @@
             <table style="min-width:900px">
               <thead><tr>
                 <th style="width:15%">Sistema</th>
-                <th style="width:13%">Método</th>
+                <th style="width:13%">MÃ©todo</th>
                 <th style="width:22%">Repuesto / Trabajo</th>
                 <th style="width:12%">Tipo Costo</th>
                 <th style="width:7%">Moneda</th>
@@ -1015,7 +990,7 @@
           <!-- Observaciones -->
           <div class="form-row">
             <div class="fg"><label>Observaciones</label>
-              <textarea id="m-obs" placeholder="Observaciones adicionales…"></textarea></div>
+              <textarea id="m-obs" placeholder="Observaciones adicionalesâ¦"></textarea></div>
           </div>
           <div class="form-actions">
             <button type="button" class="btn btn-sec" onclick="resetMant()">Limpiar</button>
@@ -1025,23 +1000,23 @@
       </div>
     </div>
 
-    <!-- ══ CTRL FALLAS ══ -->
+    <!-- ââ CTRL FALLAS ââ -->
     <div id="section-ctrl-fallas" class="section">
       <div class="card">
         <div class="tbl-header">
           <div class="card-title" style="margin:0">Control de Reportes de Fallas</div>
-          <button class="btn btn-sec btn-sm" onclick="loadFallas()">↺ Actualizar</button>
+          <button class="btn btn-sec btn-sm" onclick="loadFallas()">âº Actualizar</button>
         </div>
         <div class="search-bar">
-          <input type="text" id="sf-txt" placeholder="Buscar placa, sistema, personal…" oninput="filterFallas()">
+          <input type="text" id="sf-txt" placeholder="Buscar placa, sistema, personalâ¦" oninput="filterFallas()">
           <select id="sf-placa" onchange="filterFallas()"><option value="">Todas las placas</option></select>
           <select id="sf-sis"   onchange="filterFallas()"><option value="">Todos los sistemas</option></select>
         </div>
         <div class="tbl-wrap">
           <table>
             <thead><tr>
-              <th>N° Doc</th><th>Fecha</th><th>Placa</th><th>Km</th>
-              <th>Personal</th><th>Cód</th><th>Sistema</th><th>Componente</th>
+              <th>NÂ° Doc</th><th>Fecha</th><th>Placa</th><th>Km</th>
+              <th>Personal</th><th>CÃ³d</th><th>Sistema</th><th>Componente</th>
               <th>Detalle</th><th>Estado</th><th>Usuario</th>
             </tr></thead>
             <tbody id="tb-fallas"></tbody>
@@ -1052,15 +1027,15 @@
       </div>
     </div>
 
-    <!-- ══ CTRL MANT ══ -->
+    <!-- ââ CTRL MANT ââ -->
     <div id="section-ctrl-mant" class="section">
       <div class="card">
         <div class="tbl-header">
           <div class="card-title" style="margin:0">Control de Mantenimientos</div>
-          <button class="btn btn-sec btn-sm" onclick="loadMants()">↺ Actualizar</button>
+          <button class="btn btn-sec btn-sm" onclick="loadMants()">âº Actualizar</button>
         </div>
         <div class="search-bar">
-          <input type="text" id="sm-txt" placeholder="Buscar placa, técnico, repuesto, nombre…" oninput="filterMants()">
+          <input type="text" id="sm-txt" placeholder="Buscar placa, tÃ©cnico, repuesto, nombreâ¦" oninput="filterMants()">
           <select id="sm-tipo" onchange="filterMants()">
             <option value="">Todos los tipos</option>
             <option>CORRECTIVO</option><option>PREVENTIVO</option><option>PREDICTIVO</option>
@@ -1070,9 +1045,9 @@
         <div class="tbl-wrap">
           <table>
             <thead><tr>
-              <th>N° Doc</th><th>Nombre Reparación</th><th>F. Inicial</th><th>Tipo</th>
-              <th>Placa</th><th>Km</th><th>Técnico</th><th>Lugar</th>
-              <th>Sistema</th><th>Método</th><th>Repuesto</th>
+              <th>NÂ° Doc</th><th>Nombre ReparaciÃ³n</th><th>F. Inicial</th><th>Tipo</th>
+              <th>Placa</th><th>Km</th><th>TÃ©cnico</th><th>Lugar</th>
+              <th>Sistema</th><th>MÃ©todo</th><th>Repuesto</th>
               <th>Moneda</th><th>Cant.</th><th>P.Unit</th><th>Costo Total</th><th>Usuario</th>
             </tr></thead>
             <tbody id="tb-mants"></tbody>
@@ -1083,17 +1058,17 @@
       </div>
     </div>
 
-    <!-- ══ CATÁLOGOS ══ -->
+    <!-- ââ CATÃLOGOS ââ -->
     <div id="section-catalogos" class="section">
 
       <!-- Tabs -->
       <div class="cat-tabs">
-        <div class="cat-tab active" onclick="catTab(this,'ct-personal')">👤 Personal / Técnicos</div>
-        <div class="cat-tab" onclick="catTab(this,'ct-unidades')">🚛 Unidades (Placas)</div>
-        <div class="cat-tab" onclick="catTab(this,'ct-talleres')">🔧 Talleres / Lugares</div>
+        <div class="cat-tab active" onclick="catTab(this,'ct-personal')">ð¤ Personal / TÃ©cnicos</div>
+        <div class="cat-tab" onclick="catTab(this,'ct-unidades')">ð Unidades (Placas)</div>
+        <div class="cat-tab" onclick="catTab(this,'ct-talleres')">ð§ Talleres / Lugares</div>
       </div>
 
-      <!-- ── Panel Personal ── -->
+      <!-- ââ Panel Personal ââ -->
       <div id="ct-personal" class="cat-panel active">
         <div id="catPersonalAlert"></div>
         <div class="cat-add-form">
@@ -1104,10 +1079,10 @@
           <div class="fg">
             <label>Cargo</label>
             <select id="cp-cargo">
-              <option value="">Seleccionar…</option>
+              <option value="">Seleccionarâ¦</option>
               <option>CONDUCTOR</option>
-              <option>MECÁNICO</option>
-              <option>TÉCNICO</option>
+              <option>MECÃNICO</option>
+              <option>TÃCNICO</option>
               <option>ASISTENTE</option>
               <option>ADMINISTRADOR</option>
               <option>SUPERVISOR</option>
@@ -1127,7 +1102,7 @@
         </div>
       </div>
 
-      <!-- ── Panel Unidades ── -->
+      <!-- ââ Panel Unidades ââ -->
       <div id="ct-unidades" class="cat-panel">
         <div id="catUnidadAlert"></div>
         <div class="cat-add-form">
@@ -1136,16 +1111,16 @@
             <input type="text" id="cu-placa" placeholder="Ej: B3Z868" autocomplete="off" style="text-transform:uppercase">
           </div>
           <div class="fg" style="flex:3 1 200px">
-            <label>Descripción</label>
+            <label>DescripciÃ³n</label>
             <input type="text" id="cu-desc" placeholder="Ej: Freightliner M2 112 2013">
           </div>
           <div class="fg">
             <label>Tipo</label>
             <select id="cu-tipo">
-              <option value="">Seleccionar…</option>
+              <option value="">Seleccionarâ¦</option>
               <option>TRACTO</option>
               <option>CARRETA</option>
-              <option>CAMIÓN</option>
+              <option>CAMIÃN</option>
               <option>CAMIONETA</option>
               <option>OTRO</option>
             </select>
@@ -1157,13 +1132,13 @@
         <div class="cat-counter" id="cnt-unidades"></div>
         <div class="tbl-wrap">
           <table class="cat-tbl">
-            <thead><tr><th style="width:15%">Placa</th><th>Descripción</th><th style="width:15%">Tipo</th><th style="width:60px"></th></tr></thead>
+            <thead><tr><th style="width:15%">Placa</th><th>DescripciÃ³n</th><th style="width:15%">Tipo</th><th style="width:60px"></th></tr></thead>
             <tbody id="tb-unidades"></tbody>
           </table>
         </div>
       </div>
 
-      <!-- ── Panel Talleres ── -->
+      <!-- ââ Panel Talleres ââ -->
       <div id="ct-talleres" class="cat-panel">
         <div id="catTallerAlert"></div>
         <div class="cat-add-form">
@@ -1189,78 +1164,78 @@
   </div><!-- /content -->
 </div><!-- /main -->
 
-<!-- ════════════════════════════════════════
+<!-- ââââââââââââââââââââââââââââââââââââââââ
      SCRIPT
-════════════════════════════════════════ -->
+ââââââââââââââââââââââââââââââââââââââââ -->
 <script>
-// ── BD COMPONENTE-FALLA (catálogo completo del TMS SSI SAC) ──
+// ââ BD COMPONENTE-FALLA (catÃ¡logo completo del TMS SSI SAC) ââ
 const BD = [
   [1,'MOTOR','FRENO DE MOTOR'],[2,'MOTOR','NIVEL DE ACEITE DE MOTOR'],
-  [3,'MOTOR','FILTRO DE AIRE'],[4,'MOTOR','PÉRDIDA DE POTENCIA'],
+  [3,'MOTOR','FILTRO DE AIRE'],[4,'MOTOR','PÃRDIDA DE POTENCIA'],
   [5,'MOTOR','FUGA DE FLUIDOS'],[6,'MOTOR','FAJAS, POLEAS, TEMPLADORES'],
   [7,'MOTOR','TURBO COMPRESOR'],[8,'MOTOR','SILENCIADOR, MATACHISPA'],
-  [9,'MOTOR','MÚLTIPLE DE ESCAPE'],[10,'MOTOR','SOPORTE DE MOTOR'],
+  [9,'MOTOR','MÃLTIPLE DE ESCAPE'],[10,'MOTOR','SOPORTE DE MOTOR'],
   [11,'MOTOR','SISTEMA DE COMBUSTIBLE'],
-  [12,'CAJA - CORONAS','EMBRAGUE, REGULACIÓN'],[13,'CAJA - CORONAS','PALANCA DE CAMBIOS'],
+  [12,'CAJA - CORONAS','EMBRAGUE, REGULACIÃN'],[13,'CAJA - CORONAS','PALANCA DE CAMBIOS'],
   [14,'CAJA - CORONAS','SELECTOR, SPLITER'],[15,'CAJA - CORONAS','TEMPERATURA ELEVADA'],
   [16,'CAJA - CORONAS','PTO (TOMA DE FUERZA)'],[17,'CAJA - CORONAS','RUIDO EN LA CAJA DE CAMBIOS'],
   [18,'CAJA - CORONAS','RUIDO EN LAS CORONAS'],[19,'CAJA - CORONAS','RETENES, SEMIEJES DE RUEDA'],
-  [20,'CAJA - CORONAS','TEMPLADORES, SOPORTES'],[21,'CAJA - CORONAS','REENVÍO'],
-  [22,'CAJA - CORONAS','CARDÁN Y CRUCETAS'],
-  [23,'DIRECCIÓN','ALINEAMIENTO Y BALANCEO'],[24,'DIRECCIÓN','SERVO, SIST. HIDRÁULICO'],
-  [25,'DIRECCIÓN','CAJA DE DIRECCIÓN'],[26,'DIRECCIÓN','BARRA Y TERMINALES'],
-  [27,'REFRIGERACIÓN','NIVEL DE REFRIGERANTE'],[28,'REFRIGERACIÓN','FUGAS DE REFRIGERANTE'],
-  [29,'REFRIGERACIÓN','TANQUE DE EXPANSIÓN'],[30,'REFRIGERACIÓN','TEMPERATURA ELEVADA'],
-  [31,'REFRIGERACIÓN','RADIADOR, INTERCOOLER'],[32,'REFRIGERACIÓN','FAN CLUTCH, BOMBA DE AGUA'],
+  [20,'CAJA - CORONAS','TEMPLADORES, SOPORTES'],[21,'CAJA - CORONAS','REENVÃO'],
+  [22,'CAJA - CORONAS','CARDÃN Y CRUCETAS'],
+  [23,'DIRECCIÃN','ALINEAMIENTO Y BALANCEO'],[24,'DIRECCIÃN','SERVO, SIST. HIDRÃULICO'],
+  [25,'DIRECCIÃN','CAJA DE DIRECCIÃN'],[26,'DIRECCIÃN','BARRA Y TERMINALES'],
+  [27,'REFRIGERACIÃN','NIVEL DE REFRIGERANTE'],[28,'REFRIGERACIÃN','FUGAS DE REFRIGERANTE'],
+  [29,'REFRIGERACIÃN','TANQUE DE EXPANSIÃN'],[30,'REFRIGERACIÃN','TEMPERATURA ELEVADA'],
+  [31,'REFRIGERACIÃN','RADIADOR, INTERCOOLER'],[32,'REFRIGERACIÃN','FAN CLUTCH, BOMBA DE AGUA'],
   [33,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','CAPOT, LITERA'],
   [34,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','LUNAS Y PARABRISAS'],
   [35,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','ASIENTOS'],
-  [36,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','SUSPENSIÓN DE ASIENTOS'],
+  [36,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','SUSPENSIÃN DE ASIENTOS'],
   [37,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','CINTURONES DE SEGURIDAD'],
   [38,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','TABLERO E INSTRUMENTOS'],
-  [39,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','SUSPENSIÓN DE CABINA'],
+  [39,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','SUSPENSIÃN DE CABINA'],
   [40,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','PORTA LETRERO DE CONVOY'],
   [41,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','DEFLECTORES DE AIRE'],
   [42,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','LITERA Y AMORTIGUADORES'],
   [43,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','TANQUES DE COMBUSTIBLE'],
   [44,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','PUERTAS Y MANIJAS'],
-  [45,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','TIMÓN Y ACCESORIOS'],
+  [45,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','TIMÃN Y ACCESORIOS'],
   [46,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','HERMETICIDAD DE CABINA'],
   [47,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','ESPEJOS LATERALES'],
   [48,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','SOPORTES DE CABINA'],
-  [49,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','VÁLVULAS DE BRECKEO'],
+  [49,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','VÃLVULAS DE BRECKEO'],
   [50,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','CONTROL VELOC. CRUCERO'],
   [51,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','APOYABRAZOS'],
   [52,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','ACCESORIOS EN GENERAL'],
   [53,'CABINA Y OTROS COMPONENTES DEL REMOLCADOR','AUTORADIO Y ANTENAS'],
-  [54,'SISTEMA ELÉCTRICO','LUCES EN GENERAL'],[55,'SISTEMA ELÉCTRICO','FAROS DELANTEROS'],
-  [56,'SISTEMA ELÉCTRICO','NEBLINEROS, CIRCULINA'],[57,'SISTEMA ELÉCTRICO','CLAXON, ALARMA DE RETROCESO'],
-  [58,'SISTEMA ELÉCTRICO','TRICO Y PLUMILLAS'],[59,'SISTEMA ELÉCTRICO','BATERÍAS Y BORNES'],
-  [60,'SISTEMA ELÉCTRICO','TESTIGOS CHECK ENGINE'],[61,'SISTEMA ELÉCTRICO','TESTIGO ABS'],
-  [62,'SISTEMA ELÉCTRICO','AIRE ACONDICIONADO'],[63,'SISTEMA ELÉCTRICO','CALEFACCIÓN'],
-  [64,'SISTEMA ELÉCTRICO','CORTADOR DE CORRIENTE'],
-  [65,'FRENOS','FRENOS, REGULACIÓN'],[66,'FRENOS','FAJAS DE FRENO'],
-  [67,'FRENOS','COMPRESOR, LÍNEAS NEUMÁTICAS'],[68,'FRENOS','FUGAS DE AIRE'],
-  [69,'FRENOS','SECADOR DE AIRE'],[70,'FRENOS','VÁLVULAS NEUMÁTICAS'],
-  [71,'LLANTAS','REPARACIÓN DE LLANTAS'],[72,'LLANTAS','CAMBIO DE LLANTAS'],
-  [73,'LLANTAS','ROTACIÓN DE LLANTAS'],[74,'LLANTAS','PRESIÓN DE AIRE'],
+  [54,'SISTEMA ELÃCTRICO','LUCES EN GENERAL'],[55,'SISTEMA ELÃCTRICO','FAROS DELANTEROS'],
+  [56,'SISTEMA ELÃCTRICO','NEBLINEROS, CIRCULINA'],[57,'SISTEMA ELÃCTRICO','CLAXON, ALARMA DE RETROCESO'],
+  [58,'SISTEMA ELÃCTRICO','TRICO Y PLUMILLAS'],[59,'SISTEMA ELÃCTRICO','BATERÃAS Y BORNES'],
+  [60,'SISTEMA ELÃCTRICO','TESTIGOS CHECK ENGINE'],[61,'SISTEMA ELÃCTRICO','TESTIGO ABS'],
+  [62,'SISTEMA ELÃCTRICO','AIRE ACONDICIONADO'],[63,'SISTEMA ELÃCTRICO','CALEFACCIÃN'],
+  [64,'SISTEMA ELÃCTRICO','CORTADOR DE CORRIENTE'],
+  [65,'FRENOS','FRENOS, REGULACIÃN'],[66,'FRENOS','FAJAS DE FRENO'],
+  [67,'FRENOS','COMPRESOR, LÃNEAS NEUMÃTICAS'],[68,'FRENOS','FUGAS DE AIRE'],
+  [69,'FRENOS','SECADOR DE AIRE'],[70,'FRENOS','VÃLVULAS NEUMÃTICAS'],
+  [71,'LLANTAS','REPARACIÃN DE LLANTAS'],[72,'LLANTAS','CAMBIO DE LLANTAS'],
+  [73,'LLANTAS','ROTACIÃN DE LLANTAS'],[74,'LLANTAS','PRESIÃN DE AIRE'],
   [75,'LLANTAS','SEGURO DE TUERCAS'],[76,'LLANTAS','LLANTA DE REPUESTO'],
-  [77,'COMPONENTES CRÍTICOS','EQUIPO DE BOMBEO (TRASIEGO)'],
-  [78,'COMPONENTES CRÍTICOS','BOMBA, SIST. HIDRÁULICO'],
-  [79,'COMPONENTES CRÍTICOS','QUINTA RUEDA, KING PIN'],
-  [80,'COMPONENTES CRÍTICOS','ESCALERAS Y BARANDAS'],
-  [81,'COMPONENTES CRÍTICOS','TREN DE APOYO'],
-  [82,'COMPONENTES CRÍTICOS','FUNCIONAMIENTO DEL GPS'],
-  [83,'SUSPENSIÓN','AMORTIGUADORES'],[84,'SUSPENSIÓN','BOLSAS DE AIRE'],
-  [85,'SUSPENSIÓN','REG. DE BOLSAS DE AIRE'],[86,'SUSPENSIÓN','MUELLES Y GRILLETES'],
-  [87,'SUSPENSIÓN','ABRAZADERAS Y BUJES'],[88,'SUSPENSIÓN','TEMPLADOR, BALANCINES'],
+  [77,'COMPONENTES CRÃTICOS','EQUIPO DE BOMBEO (TRASIEGO)'],
+  [78,'COMPONENTES CRÃTICOS','BOMBA, SIST. HIDRÃULICO'],
+  [79,'COMPONENTES CRÃTICOS','QUINTA RUEDA, KING PIN'],
+  [80,'COMPONENTES CRÃTICOS','ESCALERAS Y BARANDAS'],
+  [81,'COMPONENTES CRÃTICOS','TREN DE APOYO'],
+  [82,'COMPONENTES CRÃTICOS','FUNCIONAMIENTO DEL GPS'],
+  [83,'SUSPENSIÃN','AMORTIGUADORES'],[84,'SUSPENSIÃN','BOLSAS DE AIRE'],
+  [85,'SUSPENSIÃN','REG. DE BOLSAS DE AIRE'],[86,'SUSPENSIÃN','MUELLES Y GRILLETES'],
+  [87,'SUSPENSIÃN','ABRAZADERAS Y BUJES'],[88,'SUSPENSIÃN','TEMPLADOR, BALANCINES'],
   [89,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','PARACHOQUES'],
   [90,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','TAPABARROS'],
   [91,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','ESCARPINES'],
   [92,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','CAJA DE HERRAMIENTAS'],
   [93,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','BOCAMAZAS Y RODAMIENTOS'],
-  [94,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','LUBRICACIÓN, ENGRASE'],
-  [95,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','AROS, ESPÁRRAGOS Y TUERCAS'],
+  [94,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','LUBRICACIÃN, ENGRASE'],
+  [95,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','AROS, ESPÃRRAGOS Y TUERCAS'],
   [96,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','CHASIS'],
   [97,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','PORTA CONOS'],
   [98,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','PORTA TACOS'],
@@ -1268,22 +1243,22 @@ const BD = [
   [100,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','BARRA DE ANTIEMPOTRAMIENTO'],
   [101,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','PORTA LLANTAS Y TECLES'],
   [102,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','PORTA EXTINTORES'],
-  [103,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','SEÑALÉTICA Y PINTURA'],
+  [103,'OTROS COMPONENTES DEL REMOLCADOR Y/O SEMIRREMOLQUE','SEÃALÃTICA Y PINTURA'],
   [104,'OTROS COMPONENTES DEL SEMIRREMOLQUE','CISTERNA DE COMBUSTIBLE'],
   [105,'OTROS COMPONENTES DEL SEMIRREMOLQUE','ACCESORIOS DE DESCARGA'],
-  [106,'OTROS COMPONENTES DEL SEMIRREMOLQUE','CAJA DE VÁLVULAS'],
-  [107,'OTROS COMPONENTES DEL SEMIRREMOLQUE','MANHOLE, VÁLVULAS, SCULLY'],
-  [108,'OTROS COMPONENTES DEL SEMIRREMOLQUE','LÍNEA DE VIDA, ANTIDESLIZANTE'],
+  [106,'OTROS COMPONENTES DEL SEMIRREMOLQUE','CAJA DE VÃLVULAS'],
+  [107,'OTROS COMPONENTES DEL SEMIRREMOLQUE','MANHOLE, VÃLVULAS, SCULLY'],
+  [108,'OTROS COMPONENTES DEL SEMIRREMOLQUE','LÃNEA DE VIDA, ANTIDESLIZANTE'],
   [109,'OTROS COMPONENTES DEL SEMIRREMOLQUE','SIS. TOMA A TIERRA'],
-  [110,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÁLVULAS API'],
-  [111,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÁLVULA DE ACCIONAMIENTO INTERLOCK'],
-  [112,'OTROS COMPONENTES DEL SEMIRREMOLQUE','PISTONES NEUMÁTICOS'],
-  [113,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÁLVULA RECUPERADOR DE VAPORES'],
+  [110,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÃLVULAS API'],
+  [111,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÃLVULA DE ACCIONAMIENTO INTERLOCK'],
+  [112,'OTROS COMPONENTES DEL SEMIRREMOLQUE','PISTONES NEUMÃTICOS'],
+  [113,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÃLVULA RECUPERADOR DE VAPORES'],
   [114,'OTROS COMPONENTES DEL SEMIRREMOLQUE','TAPA MANHOLE'],
-  [115,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÁLVULA DE EMERGENCIA'],
+  [115,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÃLVULA DE EMERGENCIA'],
   [116,'OTROS COMPONENTES DEL SEMIRREMOLQUE','PISO ANTIDESLIZANTE'],
-  [117,'OTROS COMPONENTES DEL SEMIRREMOLQUE','LÍNEAS DE VIDA'],
-  [118,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÁLVULAS Y MANGUERAS'],
+  [117,'OTROS COMPONENTES DEL SEMIRREMOLQUE','LÃNEAS DE VIDA'],
+  [118,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VÃLVULAS Y MANGUERAS'],
   [119,'OTROS COMPONENTES DEL SEMIRREMOLQUE','MALACATES'],
   [120,'OTROS COMPONENTES DEL SEMIRREMOLQUE','VIBRADORES'],
   [200,'GENERAL','OTROS']
@@ -1307,14 +1282,14 @@ const PLACAS_SSI = [
   {p:'AZC980',d:'Lima Traylers SRPC-30 2021',t:'CARRETA'},
   {p:'D9S998',d:'INDIO P-40 1976',t:'CARRETA'},
   {p:'F1E982',d:'J.R Nacional 2014',t:'CARRETA'},
-  {p:'C7J994',d:'San Martín SM-SR-P403E 2008',t:'CARRETA'},
+  {p:'C7J994',d:'San MartÃ­n SM-SR-P403E 2008',t:'CARRETA'},
   {p:'AZN984',d:'Lima Traylers SRPC-30 2021',t:'CARRETA'},
   {p:'F1S983',d:'J.R Nacional 2014',t:'CARRETA'},
 ];
 
-// ── STATE ──
+// ââ STATE ââ
 const S = {
-  url:  localStorage.getItem('ssi_url')  || '',
+  url:  'https://script.google.com/macros/s/AKfycbyoNjuZq--TVC1v86WyWNbvw-_uy_P0iO2FYj9DMqVgZpn9-RSJOSuILPDfAmUGrlYigw/exec',
   user: localStorage.getItem('ssi_user') || 'USUARIO',
   fallas:[], mants:[], placas:[], personal:[],
   fFilt:[], mFilt:[],
@@ -1327,7 +1302,7 @@ const FC = {N:0,F:1,U:2,P:3,K:4,PER:5,COD:6,SIS:7,CMP:8,DET:9,EST:10,TS:11};
 // Column indices MANTENIMIENTOS: N_DOCUMENTO|NOMBRE_REP|FECHA_INI|HORA_INI|FECHA_FIN|HORA_FIN|DURACION|TIPO|PLACA|KM|TECNICO|LUGAR|SISTEMA|METODO|REPUESTO|TIPO_COSTO|MONEDA|CANTIDAD|P_UNITARIO|COSTO_TOTAL|USUARIO|OBSERVACION|TIMESTAMP
 const MC = {N:0,NOM:1,FI:2,HI:3,FF:4,HF:5,DUR:6,TIP:7,P:8,K:9,TEC:10,LUG:11,SIS:12,MET:13,REP:14,TCOSTO:15,MON:16,CANT:17,PU:18,CT:19,U:20,OBS:21,TS:22};
 
-// ── INIT ──
+// ââ INIT ââ
 window.addEventListener('DOMContentLoaded', () => {
   const now = new Date();
   document.getElementById('topDate').textContent =
@@ -1339,8 +1314,7 @@ window.addEventListener('DOMContentLoaded', () => {
   addFRow();   // primera fila de falla
   addMRow();   // primera fila de repuesto
 
-  if (S.url) { hide('cfgBar'); boot(); }
-  else        { show('cfgBar'); demo(); }
+  boot();
 });
 
 function setUser(u) {
@@ -1350,25 +1324,25 @@ function setUser(u) {
 }
 function boot() { loadCatalogs(); loadDashboard(); }
 
-// ── NAV ──
+// ââ NAV ââ
 function nav(el, sec) {
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
   document.getElementById('section-'+sec).classList.add('active');
   el.classList.add('active');
-  const map={dashboard:'Dashboard','reg-fallas':'Reporte de Fallas','reg-mant':'Mantenimiento','ctrl-fallas':'Control de Fallas','ctrl-mant':'Control de Mantenimientos',catalogos:'Catálogos'};
+  const map={dashboard:'Dashboard','reg-fallas':'Reporte de Fallas','reg-mant':'Mantenimiento','ctrl-fallas':'Control de Fallas','ctrl-mant':'Control de Mantenimientos',catalogos:'CatÃ¡logos'};
   document.getElementById('pageTitle').textContent = map[sec]||sec;
   if (sec==='ctrl-fallas' && !S.fallas.length) loadFallas();
   if (sec==='ctrl-mant'   && !S.mants.length)  loadMants();
   if (sec==='catalogos')                        loadCatalogosSection();
 }
 
-// ── CONFIG ──
-// ── PIN SECURITY ──
+// ââ CONFIG ââ
+// ââ PIN SECURITY ââ
 const PIN_KEY = 'ssi_pin';
 
 function _pinHash(pin) {
-  // Hash simple XOR+rotación para ofuscar el PIN en localStorage
+  // Hash simple XOR+rotaciÃ³n para ofuscar el PIN en localStorage
   let h = 0x5A1;
   for (let i=0; i<pin.length; i++) h = ((h<<5)-h) ^ pin.charCodeAt(i);
   return (h >>> 0).toString(36);
@@ -1414,7 +1388,7 @@ function _pinShake(prefix) {
   setTimeout(()=>[0,1,2,3].forEach(i=>{ const el=document.getElementById(prefix+i); if(el) el.classList.remove('pin-error'); }), 600);
 }
 
-// Navegación automática entre celdas PIN
+// NavegaciÃ³n automÃ¡tica entre celdas PIN
 function pinMove(el, idx, mode) {
   const val = el.value.replace(/\D/,'');
   el.value = val;
@@ -1422,14 +1396,14 @@ function pinMove(el, idx, mode) {
     const prefix = mode==='create'?'pc':mode==='confirm'?'pp':'pv';
     document.getElementById(prefix+(idx+1))?.focus();
   }
-  // Si es el último dígito, auto-submit en modo verificar
+  // Si es el Ãºltimo dÃ­gito, auto-submit en modo verificar
   if (val && idx===3 && mode==='verify') pinVerifyCheck();
 }
 
 function pinSaveNew() {
   const pin1 = _readPin('pc');
   const pin2 = _readPin('pp');
-  if (pin1.length !== 4) { document.getElementById('pinCreateErr').textContent='Ingresa 4 dígitos'; _pinShake('pc'); return; }
+  if (pin1.length !== 4) { document.getElementById('pinCreateErr').textContent='Ingresa 4 dÃ­gitos'; _pinShake('pc'); return; }
   if (pin1 !== pin2)     { document.getElementById('pinCreateErr').textContent='Los PINs no coinciden'; _pinShake('pp'); _clearPinInputs('pp'); document.getElementById('pp0')?.focus(); return; }
   localStorage.setItem(PIN_KEY, _pinHash(pin1));
   pinModalClose();
@@ -1462,7 +1436,7 @@ function _openCfgModal() {
   const preview = document.getElementById('cfg-url-preview');
   if (preview && S.url) {
     const u = S.url;
-    const masked = u.length > 30 ? u.substring(0,12) + '••••••••••••' + u.slice(-10) : '••••••••••••';
+    const masked = u.length > 30 ? u.substring(0,12) + 'â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢' + u.slice(-10) : 'â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢';
     preview.textContent = masked;
   } else if (preview) {
     preview.textContent = '';
@@ -1483,14 +1457,14 @@ function saveConfig() {
   // Actualizar preview enmascarado
   const preview = document.getElementById('cfg-url-preview');
   if (preview) {
-    const masked = url.length > 30 ? url.substring(0,12)+'••••••••••••'+url.slice(-10) : '••••••••••••';
+    const masked = url.length > 30 ? url.substring(0,12)+'â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢'+url.slice(-10) : 'â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢';
     preview.textContent = masked;
   }
   setUser(user);
   hide('cfgBar'); closeConfig(); boot();
 }
 
-// ── API ──
+// ââ API ââ
 async function api(params) {
   const r = await fetch(S.url + '?' + new URLSearchParams(params));
   if (!r.ok) throw new Error('HTTP '+r.status);
@@ -1502,7 +1476,7 @@ async function post(body) {
   return r.json();
 }
 
-// ── CATALOGS ──
+// ââ CATALOGS ââ
 async function loadCatalogs() {
   // Poblar placas desde PLACAS_SSI (fallback siempre disponible)
   _fillPlacas();
@@ -1513,15 +1487,15 @@ async function loadCatalogs() {
     const personal = (pe.data||[]).slice(1).filter(r=>r[0]);
     if (placas.length)   { S.placas   = placas;   CAT.placas   = placas;   _fillPlacas(); }
     if (personal.length) { S.personal = personal; CAT.personal = personal; _fillPersonalLocal(); }
-  } catch(e) { console.warn('Catálogos (usando locales):', e); }
+  } catch(e) { console.warn('CatÃ¡logos (usando locales):', e); }
 }
 function _fillPlacas() {
   const src = S.placas.length
-    ? S.placas.map(r=>({v:r[0], label:`${r[0]}${r[1]?' — '+r[1]:''}`, t:r[2]||''}))
-    : PLACAS_SSI.map(p=>({v:p.p, label:`${p.p} — ${p.d}`, t:p.t}));
+    ? S.placas.map(r=>({v:r[0], label:`${r[0]}${r[1]?' â '+r[1]:''}`, t:r[2]||''}))
+    : PLACAS_SSI.map(p=>({v:p.p, label:`${p.p} â ${p.d}`, t:p.t}));
   ['f-placa','m-placa'].forEach(id=>{
     const el=document.getElementById(id); if(!el) return;
-    el.innerHTML='<option value="">Seleccionar placa…</option>';
+    el.innerHTML='<option value="">Seleccionar placaâ¦</option>';
     const grupos = [...new Set(src.map(x=>x.t))].filter(Boolean);
     if(grupos.length) {
       grupos.forEach(g=>{
@@ -1543,7 +1517,7 @@ function _fillPersonalLocal() {
   const src = S.personal.length ? S.personal : [];
   ['f-personal','m-tecnico'].forEach(id=>{
     const el=document.getElementById(id); if(!el) return;
-    const ph=id==='f-personal'?'Seleccionar personal…':'Seleccionar técnico…';
+    const ph=id==='f-personal'?'Seleccionar personalâ¦':'Seleccionar tÃ©cnicoâ¦';
     el.innerHTML=`<option value="">${ph}</option>`;
     src.forEach(r=>{if(r[0]){const o=document.createElement('option');o.value=o.textContent=r[0];el.appendChild(o);}});
   });
@@ -1556,7 +1530,7 @@ function fillSel(id, data, col, ph) {
   });
 }
 
-// ── DASHBOARD ──
+// ââ DASHBOARD ââ
 async function loadDashboard() {
   try {
     const [fd,md] = await Promise.all([api({action:'getFallas'}), api({action:'getMantenimientos'})]);
@@ -1579,7 +1553,7 @@ function renderKPIs() {
   document.getElementById('k-mant').textContent   = MR.length;
   const cnt={}; FR.forEach(r=>{if(r[FC.P]) cnt[r[FC.P]]=(cnt[r[FC.P]]||0)+1;});
   const top = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0];
-  document.getElementById('k-placa').textContent  = top ? top[0] : '—';
+  document.getElementById('k-placa').textContent  = top ? top[0] : 'â';
 }
 
 function renderCharts() {
@@ -1612,7 +1586,7 @@ function renderCharts() {
       plugins:{legend:{position:'right',labels:{font:{size:10,family:'Barlow'},boxWidth:10}}}}
   });
 
-  // Línea: por mes
+  // LÃ­nea: por mes
   const mL=[],mD=[];
   for(let i=11;i>=0;i--){
     const d=new Date(); d.setDate(1); d.setMonth(d.getMonth()-i);
@@ -1648,7 +1622,7 @@ function renderRecientes() {
     : '<tr class="empty-state"><td colspan="7">Sin datos</td></tr>';
 }
 
-// ── FALLA FORM ──
+// ââ FALLA FORM ââ
 let fIdx = 0;
 const METODOS_F = ['CAMBIO','REPARACION','LIMPIEZA','AJUSTE','VERIFICACION','LUBRICACION','INSPECCION','REVISION'];
 
@@ -1656,13 +1630,13 @@ function _sisSel(i) {
   // Devuelve HTML de select de sistema para fila i
   const opts = BD_SISTEMAS.map(s=>`<option value="${s}">${s}</option>`).join('');
   return `<select class="f-input" id="fs${i}" onchange="onFSis(${i})" required>
-    <option value="">Sistema…</option>${opts}</select>`;
+    <option value="">Sistemaâ¦</option>${opts}</select>`;
 }
 function _compSel(i, sis) {
   const comps = BD.filter(r=>r[1]===sis).map(r=>r[2]);
   const opts = comps.map(c=>`<option value="${c}">${c}</option>`).join('');
   return `<select class="f-input" id="fk${i}" onchange="onFComp(${i})" ${sis?'':'disabled'}>
-    <option value="">Componente…</option>${opts}</select>`;
+    <option value="">Componenteâ¦</option>${opts}</select>`;
 }
 function onFSis(i) {
   const sis = get('fs'+i);
@@ -1685,7 +1659,7 @@ function addFRow() {
     <td style="width:22%">${_sisSel(i)}</td>
     <td id="fk${i}cell" style="width:26%">${_compSel(i,'')}</td>
     <td><input class="f-input" type="text" id="fd${i}" placeholder="Detalle / Ocurrencia" required></td>
-    <td style="width:40px;text-align:center"><button type="button" class="del-btn" onclick="delFRow(${i})">✕</button></td>`;
+    <td style="width:40px;text-align:center"><button type="button" class="del-btn" onclick="delFRow(${i})">â</button></td>`;
   document.getElementById('fRowBody').appendChild(tr);
 }
 function delFRow(i) {
@@ -1703,7 +1677,7 @@ async function submitFalla(e) {
   e.preventDefault();
   if (!S.url) { mkAlert('fallaAlert','warn','Configura el Apps Script primero'); return; }
   const btn = document.getElementById('btnFalla');
-  btn.disabled=true; btn.textContent='Grabando…';
+  btn.disabled=true; btn.textContent='Grabandoâ¦';
   const rows=[];
   document.querySelectorAll('#fRowBody tr').forEach(tr=>{
     const n=tr.id.replace('fr','');
@@ -1721,7 +1695,7 @@ async function submitFalla(e) {
   finally { btn.disabled=false; btn.textContent='Grabar Reporte'; }
 }
 
-// ── MANT FORM ──
+// ââ MANT FORM ââ
 let mIdx = 0;
 const METODOS_M = ['CAMBIO','REPARACION','LIMPIEZA','AJUSTE','VERIFICACION','LUBRICACION','INSPECCION','REVISION'];
 const TIPO_COSTO = ['-','REPUESTO','MANO DE OBRA','SERVICIO EXTERNO','GARANTIA','OTRO'];
@@ -1734,18 +1708,18 @@ function calcDur() {
   if(!fi||!hi||!ff||!hf){ el.value=''; return; }
   const d1=new Date(`${fi}T${hi}`), d2=new Date(`${ff}T${hf}`);
   const diff=d2-d1;
-  if(diff<0){ el.value='—'; return; }
+  if(diff<0){ el.value='â'; return; }
   const h=Math.floor(diff/3600000), m=Math.floor((diff%3600000)/60000);
   el.value=`${h}h ${String(m).padStart(2,'0')}m`;
 }
 
 function _mSisSel(i) {
   const opts=BD_SISTEMAS.map(s=>`<option value="${s}">${s}</option>`).join('');
-  return `<select class="f-input" id="ms${i}" style="min-width:110px"><option value="">Sistema…</option>${opts}</select>`;
+  return `<select class="f-input" id="ms${i}" style="min-width:110px"><option value="">Sistemaâ¦</option>${opts}</select>`;
 }
 function _mMetSel(i) {
   const opts=METODOS_M.map(m=>`<option value="${m}">${m}</option>`).join('');
-  return `<select class="f-input" id="mm${i}" style="min-width:110px"><option value="">Método…</option>${opts}</select>`;
+  return `<select class="f-input" id="mm${i}" style="min-width:110px"><option value="">MÃ©todoâ¦</option>${opts}</select>`;
 }
 function _mTCSel(i) {
   const opts=TIPO_COSTO.map(c=>`<option value="${c}">${c}</option>`).join('');
@@ -1775,7 +1749,7 @@ function addMRow() {
     <td><input class="f-input" type="number" id="mcant${i}" placeholder="0" min="0" step="any" style="width:70px" oninput="calcMCosto(${i})"></td>
     <td><input class="f-input" type="number" id="mpu${i}" placeholder="0.00" min="0" step="any" style="width:80px" oninput="calcMCosto(${i})"></td>
     <td><input class="f-input" type="number" id="mct${i}" placeholder="0.00" readonly style="background:var(--surf-2);cursor:default;width:80px"></td>
-    <td style="text-align:center"><button type="button" class="del-btn" onclick="delMRow(${i})">✕</button></td>`;
+    <td style="text-align:center"><button type="button" class="del-btn" onclick="delMRow(${i})">â</button></td>`;
   document.getElementById('mRowBody').appendChild(tr);
 }
 function delMRow(i) {
@@ -1794,7 +1768,7 @@ async function submitMant(e) {
   e.preventDefault();
   if (!S.url) { mkAlert('mantAlert','warn','Configura el Apps Script primero'); return; }
   const btn=document.getElementById('btnMant');
-  btn.disabled=true; btn.textContent='Grabando…';
+  btn.disabled=true; btn.textContent='Grabandoâ¦';
   const repuestos=[];
   document.querySelectorAll('#mRowBody tr').forEach(tr=>{
     const n=tr.id.replace('mr','');
@@ -1821,7 +1795,7 @@ async function submitMant(e) {
   finally { btn.disabled=false; btn.textContent='Grabar Mantenimiento'; }
 }
 
-// ── CTRL FALLAS ──
+// ââ CTRL FALLAS ââ
 async function loadFallas() {
   try {
     const d = await api({action:'getFallas'});
@@ -1861,7 +1835,7 @@ function renderFTbl() {
   mkPag('pg-fallas','lbl-fallas',data.length,pg,p=>{S.fPage=p;renderFTbl();});
 }
 
-// ── CTRL MANT ──
+// ââ CTRL MANT ââ
 async function loadMants() {
   try {
     const d = await api({action:'getMantenimientos'});
@@ -1906,17 +1880,17 @@ function renderMTbl() {
   mkPag('pg-mants','lbl-mants',data.length,pg,p=>{S.mPage=p;renderMTbl();});
 }
 
-// ── PAGINATION ──
+// ââ PAGINATION ââ
 function mkPag(pgId,lblId,total,cur,cb) {
   const pages=Math.ceil(total/S.PER);
   const cont=document.getElementById(pgId);
   document.getElementById(lblId).textContent = total
-    ? `Mostrando ${(cur-1)*S.PER+1}–${Math.min(cur*S.PER,total)} de ${total} registros` : '';
+    ? `Mostrando ${(cur-1)*S.PER+1}â${Math.min(cur*S.PER,total)} de ${total} registros` : '';
   if(pages<=1){cont.innerHTML='';return;}
   let h='';
   for(let i=1;i<=pages;i++){
     if(pages>8 && i>2 && i<pages-1 && Math.abs(i-cur)>2){
-      if(i===3||i===pages-2) h+='<span style="color:var(--text-lo);padding:4px 6px">…</span>';
+      if(i===3||i===pages-2) h+='<span style="color:var(--text-lo);padding:4px 6px">â¦</span>';
       continue;
     }
     h+=`<div class="pg${i===cur?' active':''}" onclick="(${cb.toString()})(${i})">${i}</div>`;
@@ -1924,48 +1898,48 @@ function mkPag(pgId,lblId,total,cur,cb) {
   cont.innerHTML=h;
 }
 
-// ── DEMO ──
+// ââ DEMO ââ
 function demo() {
   const now=new Date(),y=now.getFullYear(),m=String(now.getMonth()+1).padStart(2,'0');
   // FALLAS: N_DOCUMENTO|FECHA|USUARIO|PLACA|KM|PERSONAL|CODIGO|SISTEMA|COMPONENTE|DETALLE|ESTADO|TIMESTAMP
   S.fallas=[
     ['N_DOCUMENTO','FECHA','USUARIO','PLACA','KM','PERSONAL','CODIGO','SISTEMA','COMPONENTE','DETALLE','ESTADO','TIMESTAMP'],
-    [`RF-2026-001`,`${y}-${m}-02`,'ADRIÁN','B3Z868','142800','RAMIREZ C.','11','MOTOR','FILTRO DE ACEITE DE MOTOR','Fuga de aceite en empaque inferior del filtro','RESUELTO',''],
-    [`RF-2026-001`,`${y}-${m}-02`,'ADRIÁN','B3Z868','142800','RAMIREZ C.','52','FRENOS','PASTILLAS DE FRENO','Desgaste excesivo lado derecho, ruido al frenar','RESUELTO',''],
-    [`RF-2026-002`,`${y}-${m}-05`,'PEDRO','F3R949','88200','HUANCA L.','21','TRANSMISIÓN','CAJA DE CAMBIOS','Ruido al cambiar de 3ra a 4ta velocidad','PENDIENTE',''],
-    [`RF-2026-003`,`${y}-${m}-09`,'ADRIÁN','B3Z868','143500','RAMIREZ C.','14','MOTOR','CORREA DE DISTRIBUCIÓN','Rotura parcial, requiere cambio urgente','EN PROCESO',''],
-    [`RF-2026-004`,`${y}-${m}-12`,'PEDRO','A5O859','62100','LÓPEZ M.','71','SUSPENSIÓN','AMORTIGUADOR','Fuga de gas, golpeteo pronunciado en curvas','PENDIENTE',''],
-    [`RF-2026-005`,`${y}-${m}-16`,'ADRIÁN','C7O895','144200','RAMIREZ C.','54','FRENOS','DISCO DE FRENO','Rayado superficial, vibración al frenar','RESUELTO',''],
-    [`RF-2026-006`,`${y}-${m}-19`,'PEDRO','D3N739','45000','HUANCA L.','102','SISTEMA ELÉCTRICO','BATERÍA','Sin carga, no enciende en frío','RESUELTO',''],
-    [`RF-2026-007`,`${y}-${m}-22`,'ADRIÁN','F3R949','89100','LÓPEZ M.','15','MOTOR','RADIADOR','Sobrecalentamiento, pérdida de refrigerante','PENDIENTE',''],
+    [`RF-2026-001`,`${y}-${m}-02`,'ADRIÃN','B3Z868','142800','RAMIREZ C.','11','MOTOR','FILTRO DE ACEITE DE MOTOR','Fuga de aceite en empaque inferior del filtro','RESUELTO',''],
+    [`RF-2026-001`,`${y}-${m}-02`,'ADRIÃN','B3Z868','142800','RAMIREZ C.','52','FRENOS','PASTILLAS DE FRENO','Desgaste excesivo lado derecho, ruido al frenar','RESUELTO',''],
+    [`RF-2026-002`,`${y}-${m}-05`,'PEDRO','F3R949','88200','HUANCA L.','21','TRANSMISIÃN','CAJA DE CAMBIOS','Ruido al cambiar de 3ra a 4ta velocidad','PENDIENTE',''],
+    [`RF-2026-003`,`${y}-${m}-09`,'ADRIÃN','B3Z868','143500','RAMIREZ C.','14','MOTOR','CORREA DE DISTRIBUCIÃN','Rotura parcial, requiere cambio urgente','EN PROCESO',''],
+    [`RF-2026-004`,`${y}-${m}-12`,'PEDRO','A5O859','62100','LÃPEZ M.','71','SUSPENSIÃN','AMORTIGUADOR','Fuga de gas, golpeteo pronunciado en curvas','PENDIENTE',''],
+    [`RF-2026-005`,`${y}-${m}-16`,'ADRIÃN','C7O895','144200','RAMIREZ C.','54','FRENOS','DISCO DE FRENO','Rayado superficial, vibraciÃ³n al frenar','RESUELTO',''],
+    [`RF-2026-006`,`${y}-${m}-19`,'PEDRO','D3N739','45000','HUANCA L.','102','SISTEMA ELÃCTRICO','BATERÃA','Sin carga, no enciende en frÃ­o','RESUELTO',''],
+    [`RF-2026-007`,`${y}-${m}-22`,'ADRIÃN','F3R949','89100','LÃPEZ M.','15','MOTOR','RADIADOR','Sobrecalentamiento, pÃ©rdida de refrigerante','PENDIENTE',''],
   ];
   // MANTENIMIENTOS: N_DOCUMENTO|NOMBRE_REP|FECHA_INI|HORA_INI|FECHA_FIN|HORA_FIN|DURACION|TIPO|PLACA|KM|TECNICO|LUGAR|SISTEMA|METODO|REPUESTO|TIPO_COSTO|MONEDA|CANTIDAD|P_UNITARIO|COSTO_TOTAL|USUARIO|OBSERVACION|TIMESTAMP
   S.mants=[
     ['N_DOCUMENTO','NOMBRE_REP','FECHA_INI','HORA_INI','FECHA_FIN','HORA_FIN','DURACION','TIPO','PLACA','KM','TECNICO','LUGAR','SISTEMA','METODO','REPUESTO','TIPO_COSTO','MONEDA','CANTIDAD','P_UNITARIO','COSTO_TOTAL','USUARIO','OBSERVACION','TIMESTAMP'],
-    [`MT-2026-001`,'Cambio filtro y aceite',`${y}-${m}-03`,'08:00',`${y}-${m}-03`,'10:00','2h 00m','CORRECTIVO','B3Z868','142900','RAMIREZ C.','SSI','MOTOR','CAMBIO','ACEITE 10W40 ROTELLA','REPUESTO','S/',4,85,340,'ADRIÁN','',''],
-    [`MT-2026-001`,'Cambio filtro y aceite',`${y}-${m}-03`,'08:00',`${y}-${m}-03`,'10:00','2h 00m','CORRECTIVO','B3Z868','142900','RAMIREZ C.','SSI','MOTOR','CAMBIO','FILTRO DE ACEITE MANN','REPUESTO','S/',1,45,45,'ADRIÁN','',''],
+    [`MT-2026-001`,'Cambio filtro y aceite',`${y}-${m}-03`,'08:00',`${y}-${m}-03`,'10:00','2h 00m','CORRECTIVO','B3Z868','142900','RAMIREZ C.','SSI','MOTOR','CAMBIO','ACEITE 10W40 ROTELLA','REPUESTO','S/',4,85,340,'ADRIÃN','',''],
+    [`MT-2026-001`,'Cambio filtro y aceite',`${y}-${m}-03`,'08:00',`${y}-${m}-03`,'10:00','2h 00m','CORRECTIVO','B3Z868','142900','RAMIREZ C.','SSI','MOTOR','CAMBIO','FILTRO DE ACEITE MANN','REPUESTO','S/',1,45,45,'ADRIÃN','',''],
     [`MT-2026-002`,'Cambio pastillas freno',`${y}-${m}-06`,'09:00',`${y}-${m}-06`,'11:30','2h 30m','CORRECTIVO','F3R949','88200','HUANCA L.','SSI','FRENOS','CAMBIO','PASTILLAS FRENO DELANTERAS BREMBO','REPUESTO','S/',1,280,280,'PEDRO','',''],
     [`MT-2026-002`,'Cambio pastillas freno',`${y}-${m}-06`,'09:00',`${y}-${m}-06`,'11:30','2h 30m','CORRECTIVO','F3R949','88200','HUANCA L.','SSI','FRENOS','CAMBIO','MANO DE OBRA','MANO DE OBRA','S/',1,70,70,'PEDRO','',''],
-    [`MT-2026-003`,'Cambio correa distribución',`${y}-${m}-10`,'07:30',`${y}-${m}-10`,'14:00','6h 30m','CORRECTIVO','B3Z868','143600','RAMIREZ C.','SSI','MOTOR','CAMBIO','CORREA DE DISTRIBUCIÓN GATES','REPUESTO','S/',1,850,850,'ADRIÁN','Urgente',''],
-    [`MT-2026-003`,'Cambio correa distribución',`${y}-${m}-10`,'07:30',`${y}-${m}-10`,'14:00','6h 30m','CORRECTIVO','B3Z868','143600','RAMIREZ C.','SSI','MOTOR','CAMBIO','KIT TENSOR + POLEA','REPUESTO','S/',1,350,350,'ADRIÁN','Urgente',''],
-    [`MT-2026-004`,'Mantenimiento preventivo 50k',`${y}-${m}-15`,'08:00',`${y}-${m}-15`,'17:00','9h 00m','PREVENTIVO','A5O859','62100','LÓPEZ M.','TRIPLE E TRUCKS','MOTOR','CAMBIO','ACEITE 15W40 SHELL','REPUESTO','S/',5,90,450,'PEDRO','PM 50,000 km',''],
-    [`MT-2026-004`,'Mantenimiento preventivo 50k',`${y}-${m}-15`,'08:00',`${y}-${m}-15`,'17:00','9h 00m','PREVENTIVO','A5O859','62100','LÓPEZ M.','TRIPLE E TRUCKS','FILTROS','CAMBIO','FILTRO COMBUSTIBLE PRIMARIO','REPUESTO','S/',1,65,65,'PEDRO','PM 50,000 km',''],
-    [`MT-2026-005`,'Cambio batería',`${y}-${m}-20`,'10:00',`${y}-${m}-20`,'12:00','2h 00m','CORRECTIVO','D3N739','45100','HUANCA L.','SSI','SISTEMA ELÉCTRICO','CAMBIO','BATERÍA BOSCH 12V 180Ah','REPUESTO','S/',1,420,420,'PEDRO','',''],
+    [`MT-2026-003`,'Cambio correa distribuciÃ³n',`${y}-${m}-10`,'07:30',`${y}-${m}-10`,'14:00','6h 30m','CORRECTIVO','B3Z868','143600','RAMIREZ C.','SSI','MOTOR','CAMBIO','CORREA DE DISTRIBUCIÃN GATES','REPUESTO','S/',1,850,850,'ADRIÃN','Urgente',''],
+    [`MT-2026-003`,'Cambio correa distribuciÃ³n',`${y}-${m}-10`,'07:30',`${y}-${m}-10`,'14:00','6h 30m','CORRECTIVO','B3Z868','143600','RAMIREZ C.','SSI','MOTOR','CAMBIO','KIT TENSOR + POLEA','REPUESTO','S/',1,350,350,'ADRIÃN','Urgente',''],
+    [`MT-2026-004`,'Mantenimiento preventivo 50k',`${y}-${m}-15`,'08:00',`${y}-${m}-15`,'17:00','9h 00m','PREVENTIVO','A5O859','62100','LÃPEZ M.','TRIPLE E TRUCKS','MOTOR','CAMBIO','ACEITE 15W40 SHELL','REPUESTO','S/',5,90,450,'PEDRO','PM 50,000 km',''],
+    [`MT-2026-004`,'Mantenimiento preventivo 50k',`${y}-${m}-15`,'08:00',`${y}-${m}-15`,'17:00','9h 00m','PREVENTIVO','A5O859','62100','LÃPEZ M.','TRIPLE E TRUCKS','FILTROS','CAMBIO','FILTRO COMBUSTIBLE PRIMARIO','REPUESTO','S/',1,65,65,'PEDRO','PM 50,000 km',''],
+    [`MT-2026-005`,'Cambio baterÃ­a',`${y}-${m}-20`,'10:00',`${y}-${m}-20`,'12:00','2h 00m','CORRECTIVO','D3N739','45100','HUANCA L.','SSI','SISTEMA ELÃCTRICO','CAMBIO','BATERÃA BOSCH 12V 180Ah','REPUESTO','S/',1,420,420,'PEDRO','',''],
   ];
   renderKPIs(); renderCharts(); renderRecientes();
   mkAlert('dashAlert','warn',
-    '<strong>Modo demo</strong> — datos de ejemplo. ' +
+    '<strong>Modo demo</strong> â datos de ejemplo. ' +
     '<a href="javascript:openConfig()" style="color:var(--amber);text-decoration:underline">Configura el Apps Script</a> para ver tus datos reales.');
 }
 
-// ══════════════════════════════════════════
-// CATÁLOGOS
-// ══════════════════════════════════════════
+// ââââââââââââââââââââââââââââââââââââââââââ
+// CATÃLOGOS
+// ââââââââââââââââââââââââââââââââââââââââââ
 
 // Talleres por defecto (se complementan con los de Sheets)
 const TALLERES_DEFAULT = ['SSI','TALLER EXTERNO','TRIPLE E TRUCKS','TIMO','J & T TRANSPORTE DE CARGA','RECTIFICACIONES EMANUEL SG'];
 
-// Estado local de catálogos
+// Estado local de catÃ¡logos
 const CAT = { personal:[], placas:[], talleres:[] };
 
 function catTab(el, panelId) {
@@ -1977,7 +1951,7 @@ function catTab(el, panelId) {
 
 async function loadCatalogosSection() {
   if (!S.url) {
-    // Sin conexión: cargar desde PLACAS_SSI y arreglos por defecto
+    // Sin conexiÃ³n: cargar desde PLACAS_SSI y arreglos por defecto
     CAT.placas   = PLACAS_SSI.map(p=>[p.p, p.d, p.t]);
     CAT.talleres = [...TALLERES_DEFAULT];
     renderCatPersonal(); renderCatUnidades(); renderCatTalleres();
@@ -1991,7 +1965,7 @@ async function loadCatalogosSection() {
     ]);
     CAT.personal = (pe.data||[]).slice(1).filter(r=>r[0]);
     CAT.placas   = (pl.data||[]).slice(1).filter(r=>r[0]);
-    // Talleres = hoja LUGARES + defaults que no estén ya
+    // Talleres = hoja LUGARES + defaults que no estÃ©n ya
     const dbLugares = (lu.data||[]).slice(1).map(r=>String(r[0]).trim()).filter(Boolean);
     const extra = TALLERES_DEFAULT.filter(t=>!dbLugares.includes(t));
     CAT.talleres = [...dbLugares, ...extra];
@@ -2003,14 +1977,14 @@ async function loadCatalogosSection() {
   }
 }
 
-// ── RENDER ──
+// ââ RENDER ââ
 function renderCatPersonal() {
   document.getElementById('cnt-personal').textContent = `${CAT.personal.length} persona(s) registrada(s)`;
   document.getElementById('tb-personal').innerHTML = CAT.personal.length
     ? CAT.personal.map(r=>`<tr>
         <td><strong>${r[0]||''}</strong></td>
         <td>${r[1]||''}</td>
-        <td><button class="del-btn" onclick="catDelPersonal('${escHtml(r[0])}')">✕</button></td>
+        <td><button class="del-btn" onclick="catDelPersonal('${escHtml(r[0])}')">â</button></td>
       </tr>`).join('')
     : '<tr class="empty-state"><td colspan="3">Sin registros</td></tr>';
   // Actualizar selects del formulario
@@ -2023,7 +1997,7 @@ function renderCatUnidades() {
         <td><strong>${r[0]||''}</strong></td>
         <td>${r[1]||''}</td>
         <td><span class="badge ${r[2]==='TRACTO'?'b-ok':r[2]==='CARRETA'?'b-proc':'b-pend'}">${r[2]||''}</span></td>
-        <td><button class="del-btn" onclick="catDelPlaca('${escHtml(r[0])}')">✕</button></td>
+        <td><button class="del-btn" onclick="catDelPlaca('${escHtml(r[0])}')">â</button></td>
       </tr>`).join('')
     : '<tr class="empty-state"><td colspan="4">Sin registros</td></tr>';
   // Refrescar dropdown de placas en formularios
@@ -2034,18 +2008,18 @@ function renderCatTalleres() {
   document.getElementById('tb-talleres').innerHTML = CAT.talleres.length
     ? CAT.talleres.map(t=>`<tr>
         <td>${escHtml(t)}</td>
-        <td><button class="del-btn" onclick="catDelLugar('${escHtml(t)}')">✕</button></td>
+        <td><button class="del-btn" onclick="catDelLugar('${escHtml(t)}')">â</button></td>
       </tr>`).join('')
     : '<tr class="empty-state"><td colspan="2">Sin registros</td></tr>';
   // Refrescar select m-lugar
   const sel = document.getElementById('m-lugar');
   if (sel) {
-    sel.innerHTML = '<option value="">Seleccionar…</option>';
+    sel.innerHTML = '<option value="">Seleccionarâ¦</option>';
     CAT.talleres.forEach(t=>{const o=document.createElement('option');o.value=o.textContent=t;sel.appendChild(o);});
   }
 }
 
-// ── ADD ──
+// ââ ADD ââ
 async function catAddPersonal() {
   const nombre = document.getElementById('cp-nombre').value.trim().toUpperCase();
   const cargo  = document.getElementById('cp-cargo').value.trim().toUpperCase();
@@ -2057,7 +2031,7 @@ async function catAddPersonal() {
     try {
       const r = await post({action:'addPersonal', nombre, cargo});
       if (!r.ok) { mkAlert('catPersonalAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catPersonalAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catPersonalAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.personal.push([nombre, cargo]);
   document.getElementById('cp-nombre').value='';
@@ -2078,7 +2052,7 @@ async function catAddPlaca() {
     try {
       const r = await post({action:'addPlaca', placa, descripcion:desc, tipo});
       if (!r.ok) { mkAlert('catUnidadAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catUnidadAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catUnidadAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.placas.push([placa, desc, tipo]);
   document.getElementById('cu-placa').value='';
@@ -2098,7 +2072,7 @@ async function catAddLugar() {
     try {
       const r = await post({action:'addLugar', lugar});
       if (!r.ok) { mkAlert('catTallerAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catTallerAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catTallerAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.talleres.push(lugar);
   document.getElementById('ct-lugar').value='';
@@ -2106,36 +2080,36 @@ async function catAddLugar() {
   mkAlert('catTallerAlert','ok',`${lugar} agregado`);
 }
 
-// ── DELETE ──
+// ââ DELETE ââ
 async function catDelPersonal(nombre) {
-  if (!confirm(`¿Eliminar "${nombre}"?`)) return;
+  if (!confirm(`Â¿Eliminar "${nombre}"?`)) return;
   if (S.url) {
     try {
       const r = await post({action:'deletePersonal', nombre});
       if (!r.ok) { mkAlert('catPersonalAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catPersonalAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catPersonalAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.personal = CAT.personal.filter(r=>String(r[0]).toUpperCase()!==nombre.toUpperCase());
   renderCatPersonal();
 }
 async function catDelPlaca(placa) {
-  if (!confirm(`¿Eliminar unidad "${placa}"?`)) return;
+  if (!confirm(`Â¿Eliminar unidad "${placa}"?`)) return;
   if (S.url) {
     try {
       const r = await post({action:'deletePlaca', placa});
       if (!r.ok) { mkAlert('catUnidadAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catUnidadAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catUnidadAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.placas = CAT.placas.filter(r=>String(r[0]).toUpperCase()!==placa.toUpperCase());
   renderCatUnidades();
 }
 async function catDelLugar(lugar) {
-  if (!confirm(`¿Eliminar "${lugar}"?`)) return;
+  if (!confirm(`Â¿Eliminar "${lugar}"?`)) return;
   if (S.url) {
     try {
       const r = await post({action:'deleteLugar', lugar});
       if (!r.ok) { mkAlert('catTallerAlert','err', r.error||'Error'); return; }
-    } catch(e) { mkAlert('catTallerAlert','err','Error de conexión'); return; }
+    } catch(e) { mkAlert('catTallerAlert','err','Error de conexiÃ³n'); return; }
   }
   CAT.talleres = CAT.talleres.filter(t=>t.toUpperCase()!==lugar.toUpperCase());
   renderCatTalleres();
@@ -2143,7 +2117,7 @@ async function catDelLugar(lugar) {
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/'/g,'&#39;').replace(/</g,'&lt;'); }
 
-// ── UTILS ──
+// ââ UTILS ââ
 function get(id) { return document.getElementById(id)?.value||''; }
 function setVal(id,v) { const el=document.getElementById(id); if(el) el.value=v; }
 function show(id) { const el=document.getElementById(id); if(el) el.style.display=''; }
